@@ -13,7 +13,7 @@
     --dashBoard: #212B36;
     --title: #212B36;
     --card: #F3F6F9;
-    --font: #75778B;
+    --font: #57585c;
 }
 /* Grid-Layout */
 .small-icon {
@@ -203,7 +203,7 @@ button:focus {
     font-size: 1.1rem;
     outline: none;
     border: 1px solid var(--font);
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .search-box:focus {
