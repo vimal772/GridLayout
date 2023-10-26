@@ -136,3 +136,17 @@
     border-left: 5px solid goldenrod;
     box-shadow: 5px 5px 5px 1px rgb(179, 172, 172);
 }
+
+.project-card {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.project-card .content {
+    grid-row: 2;
+}
+
+.icon-wrap {
+    grid-row: 3;
+    grid-column: 2;
+}
