@@ -1,11 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Roboto:wght@100;300;700&display=swap');
 * {
     margin: 5px;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: 'Finger Paint', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
+:root {
+    --dashBoard: #212B36;
+    --title: #212B36;
+    --card: #F3F6F9;
+    --font: #75778B;
+}
+/* Grid-Layout */
 .small-icon {
     height: 25px;
     width: 25px;
@@ -143,10 +153,60 @@
 }
 
 .project-card .content {
-    grid-row: 2;
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    overflow-x: hidden;
 }
 
 .icon-wrap {
     grid-row: 3;
     grid-column: 2;
+}
+
+
+/* Styuliong */
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--title);
+}
+
+p {
+    color: var(--font);
+}
+
+.project-card,
+.aside-card,
+.aside-container {
+    background: var(--card);
+}
+
+a {
+    color: var(--font);
+}
+li a:hover {
+    text-decoration: underline #212B36;
+} 
+
+button {
+    background-color: var(--title);
+    color: var(--card);
+    padding: 10px;
+}
+
+button:focus {
+    opacity: .9;
+}
+
+.search-box {
+    width: 600px;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    outline: none;
+    border: 1px solid var(--font);
+    border-radius: 10px;
+}
+
+.search-box:focus {
+    border: 0px;
+    border-bottom: 2px solid var(--dashBoard);
 }
